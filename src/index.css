@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "AsepriteFont";
+  src: url(./components/font/AsepriteFont.ttf);
+}
+
+* {
+  font-family: "AsepriteFont";
+  letter-spacing: 1.5px;
+}
+
+body {
+  margin: 0;
+  background-color: #ecc081;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

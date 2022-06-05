@@ -1,0 +1,161 @@
+#editor {
+  padding: 2rem;
+  padding-bottom: 1rem;
+  color: #4f371e;
+}
+
+.title {
+  font-size: 6.6rem;
+  letter-spacing: 15px;
+  margin: 0;
+  transform: translateX(3%);
+}
+
+.options {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.options::before {
+  content: "= ------------ = ------------ =";
+  display: block;
+  font-size: 2.2rem;
+}
+
+.dimensionText {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  margin-bottom: 2px;
+}
+
+.presetsText {
+  font-size: 1.65rem;
+  margin-bottom: 8px;
+}
+
+.sizeRecommend {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.sizeText {
+  display: grid;
+  grid-template-columns: 80px 100px;
+  grid-template-rows: 25px 25px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.65rem;
+}
+
+.canvasNumberSize {
+  width: 80px;
+  height: 13px;
+  font-size: 1.21rem;
+}
+
+.canvasInput:focus {
+  outline: none !important;
+}
+
+.customBtn {
+  background-image: url("./button/btn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 61px;
+  height: 24px;
+  font-size: 1.21rem;
+}
+
+.customBtn:hover {
+  background-image: url("./button/btnHover.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.customBtn:active {
+  background-image: url("./button/btnActive.png");
+  background-repeat: no-repeat;
+  color: #fbdf9b;
+}
+
+.presets {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.presetBtn {
+  margin: 0px 1.5px;
+}
+
+.options::after {
+  content: "= ------------ = ------------ =";
+  display: block;
+  font-size: 2.2rem;
+}
+
+.startBtnDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.primaryBtn {
+  background-image: url("./button/btnPrimary.png");
+  width: 110px;
+  height: 31px;
+  font-size: 1.54rem;
+}
+
+.primaryBtn:hover {
+  background-image: url("./button/btnHoverPrimary.png");
+}
+
+.primaryBtn:active {
+  background-image: url("./button/btnActivePrimary.png");
+}
+
+.colorpicker {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.canvasDiv::before {
+  content: "= ------------ = ------------ =";
+  display: block;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.canvasDiv::after {
+  content: "= ------------ = ------------ =";
+  display: block;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.canvasBtns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.saveBtn {
+  background-image: url("./button/btnSave.png");
+  width: 220px;
+  height: 31px;
+  font-size: 1.54rem;
+}
+
+.saveBtn:hover {
+  background-image: url("./button/btnSaveHover.png");
+}
+
+.saveBtn:active {
+  background-image: url("./button/btnSaveActive.png");
+}

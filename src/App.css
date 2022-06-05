@@ -1,0 +1,25 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: fit-content;
+}
+
+.App {
+  margin-top: 3rem;
+  background-color: #fbdf9bff;
+  border: 3.5px #4f371e solid;
+  min-width: 409px;
+  /* min-height: 557px; */
+}
+
+.madeBy {
+  font-size: 1.21rem;
+}
