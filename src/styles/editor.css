@@ -81,7 +81,7 @@
 .presets {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 8px;
 }
 
 .presetBtn {
