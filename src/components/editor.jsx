@@ -11,6 +11,18 @@ const Editor = () => {
   const [showCanvas, setShowCanvas] = useState(false);
   const [isValidHW, setIsValidHW] = useState(true);
 
+  // beginning: for hovering on 0×0 button
+  const [isHoveredOn, setIsHoveredOn] = useState(false);
+
+  function handleMouseOver () {
+    setIsHoveredOn(true);
+  }
+
+  function handleMouseOut () {
+    setIsHoveredOn(false);
+  }
+  // end
+
   function startApp () {
     setShowCanvas(!showCanvas);
     setShowOptions(!showOptions);
@@ -34,11 +46,11 @@ const Editor = () => {
 
     if (num.target.value < 1 && num.target.value !== '') {
       if (isValidHW === true)
-        alert(`Enter a Valid Positive Value as ${decider}!\nStart Button will disappear!`);
+        alert(`Please Enter a Valid Positive Value as ${decider}!\nStart Button will disappear!`);
       else
-        alert(`Enter a Valid Positive Value as ${decider}!\nSo the Start Button reappears!`);
+        alert(`Please Enter a Valid Positive Value as ${decider}!\nSo the Start Button reappears!`);
       setIsValidHW(false);
-
+      
     } else if (num.target.value >= 1 && canvasHeight >= 0 && canvasWidth >= 0) {
       setIsValidHW(true);
     }
@@ -95,9 +107,11 @@ const Editor = () => {
                   setCanvasWidth(16);
                   canvasInputTextUpdater(16);
                   setIsValidHW(true);
-                }}>
+                }}
+              >
                   16×16
               </div>
+
               <div
                 className='presetBtn customBtn' 
                 onClick={() => {
@@ -105,9 +119,11 @@ const Editor = () => {
                   setCanvasWidth(32);
                   canvasInputTextUpdater(32);
                   setIsValidHW(true);
-                }}>
+                }}
+              >
                   32×32
               </div>
+
               <div
                 className='presetBtn customBtn' 
                 onClick={() => {
@@ -115,9 +131,47 @@ const Editor = () => {
                   setCanvasWidth(64);
                   canvasInputTextUpdater(64);
                   setIsValidHW(true);
-                }}>
+                }}
+              >
                   64×64
               </div>
+            </div>
+
+            <div className='zeroByZeroPresets'>
+
+              <h3 className='zeroByZeroText'>
+                This option exists just because <br/>
+                I wanted to show you that<br/>
+                I've even handled the 0×0 case ;D
+              </h3>
+
+              <div
+                className='presetBtn customBtn' 
+                onClick={() => {
+                  setCanvasHeight(0);
+                  setCanvasWidth(0);
+                  canvasInputTextUpdater(0);
+                  setIsValidHW(false);
+                  alert(`Please Enter a Valid Positive Value as Width and Height!\nStart Button will disappear!`);
+                }}
+                onMouseOver={() => {
+                  handleMouseOver()
+                }}
+                onMouseOut={() => {
+                  handleMouseOut()
+                }}
+              >
+                  0×0
+              </div>
+
+              {isHoveredOn && 
+                  <h4 className='pstText'> 
+                    psssst... <br/>
+                    This 0x0 is actually showing my FACE<br/>
+                    when I was handeling 0×0 case!!! ;)
+                  </h4>
+              }
+
             </div>
 
           </div>

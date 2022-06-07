@@ -10,7 +10,13 @@
 
 body {
   margin: 0;
+  padding: 0;
   background-color: #ecc081;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: fit-content;
 }
 
 code {

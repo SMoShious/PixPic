@@ -88,6 +88,30 @@
   margin: 0px 1.5px;
 }
 
+.zeroByZeroPresets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.zeroByZeroText {
+  font-size: 1.17rem;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.pstText {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 69%;
+  padding: 8px;
+  background-color: #fbdf9b;
+  border: 2px #4f371e solid;
+}
+
 .options::after {
   content: "= ------------ = ------------ =";
   display: block;
