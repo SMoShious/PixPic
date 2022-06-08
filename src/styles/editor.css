@@ -165,6 +165,10 @@
   margin-right: 0px !important;
 }
 
+.circle-picker span div span div {
+  border: 1.6px #4f371e solid !important;
+}
+
 .canvasDiv::before {
   content: "= ------------ = ------------ =";
   display: block;
