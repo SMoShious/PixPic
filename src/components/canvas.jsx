@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { exportComponentAsPNG } from 'react-component-export-image';
 import React from "react";
 import Row from "./row";
-import './../styles/canvas.css';
 
 const Canvas = (props) => {
   const {width, height, penColor} = props;
