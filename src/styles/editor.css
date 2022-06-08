@@ -147,8 +147,12 @@
 }
 
 .circle-picker {
+  /* Bringing all styles of react-color to unset and default state */
   width: unset !important;
   flex-wrap: unset !important;
+  margin-right: 0px !important;
+
+  /* Overwriting existing styles of react-color library */
   display: grid !important;
   grid-template-columns: 38px 38px 38px 38px 38px 38px !important;
   justify-content: center;
@@ -158,6 +162,7 @@
 .circle-picker span div {
   border-radius: 0px !important;
   margin-bottom: 10px !important;
+  margin-right: 0px !important;
 }
 
 .canvasDiv::before {
