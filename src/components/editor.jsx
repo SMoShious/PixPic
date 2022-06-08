@@ -187,7 +187,6 @@ const Editor = () => {
         {showCanvas &&
           <div className='colorpicker'>
             <CirclePicker
-              triangle='hide'
               color={penColor}
 
               //Color Palette + White Color as Eraser
