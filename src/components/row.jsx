@@ -2,12 +2,12 @@ import Pixel from "./pixel";
 import './../styles/row.css';
 
 const Row = (props) => {
-  const {width, penColor} = props;
+  const {mouseHeld, width, penColor} = props;
 
   let row = [];
 
   for (let i = 0; i < width; i++) {
-    row.push( <Pixel key={i} penColor={penColor}/> );
+    row.push( <Pixel mouseHeld={mouseHeld} key={i} penColor={penColor}/> );
   }
 
   return (

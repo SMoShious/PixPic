@@ -3,7 +3,7 @@ import './../styles/pixel.css';
 
 const Pixel = ( props ) => {
 
-  const {penColor} = props;
+  const {mouseHeld, penColor} = props;
 
   const [newColor, setNewColor] = useState('#ffffff');
   const [oldColor, setOldColor] = useState(newColor);
@@ -30,7 +30,10 @@ const Pixel = ( props ) => {
   return (
     <div
       className = 'pixel'
-      onMouseEnter = {colorChangeOnEnter}
+      onMouseEnter = {() => {
+        if (mouseHeld) colorChangeOnClick()
+        else if (!mouseHeld) colorChangeOnEnter()
+      }}
       onMouseLeave = {colorChangeOnLeave}
       onClick = {colorChangeOnClick}
       style = {{backgroundColor: newColor}}

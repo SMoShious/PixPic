@@ -56,6 +56,9 @@ const Editor = () => {
     }
   }
 
+  //temp lines
+  const [mouseHeld, setMouseHeld] = useState(false);
+
   return (
     <React.Fragment>
       <div id='editor'>
@@ -205,6 +208,8 @@ const Editor = () => {
               width={canvasWidth}
               height={canvasHeight}
               penColor={penColor}
+              mouseHeld={mouseHeld}
+              setMouseHeld={setMouseHeld}
             />
             <div className='canvasBtns'>
               <div className='primaryBtn customBtn redrawBtn' onClick={startApp}>Redraw</div>

@@ -1,6 +1,13 @@
 .pixel {
   width: 1rem;
   height: 1rem;
+
+  /* Unselectablity */
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .pixel:hover {

@@ -184,6 +184,11 @@
   margin-bottom: 1.5rem;
 }
 
+.canvasSection {
+  display: flex;
+  justify-content: center;
+}
+
 .canvasBtns {
   display: flex;
   justify-content: center;
