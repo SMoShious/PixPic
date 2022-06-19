@@ -4,7 +4,7 @@ import { CirclePicker } from 'react-color';
 import './../styles/editor.css';
 
 const Editor = () => {
-  const [penColor, setPenColor] = useState('#d9ae98');
+  const [penColor, setPenColor] = useState('#e94030');
   const [canvasHeight, setCanvasHeight] = useState(16);
   const [canvasWidth, setCanvasWidth] = useState(16);
   const [showOptions, setShowOptions] = useState(true);
